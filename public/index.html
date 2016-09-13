@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>chat</title>
+    <link rel="stylesheet" href="/stylesheets/style.css"></link>
+</head>
+<body>
+    <div id="content">
+        <!--显示当前聊天室的div-->
+        <div id="room"></div>
+        <!--显示当前可用聊天室列表的div-->
+        <div id='room-list'></div>  
+         <!--显示当前消息的div-->
+        <div id="messages"></div> 
+
+        <form id="send-form">
+             <!--用户用来输入聊天内容和消息的表单输入元素-->
+            <input id="send-message"/>
+            <input id='send-button' type="submit" value="send"/>
+
+            <div id='help'>
+                Chat cmmands:
+                <ul>
+                    <li>Change nickname:<code>nick [usename]</code></li>
+                    <li>Join/create room:<code>join [roomname]</code></li>
+                </ul>
+            </div>
+        </form>           
+    </div>
+
+    <script src="/socket.io/socket.io.js" ></script>
+    <script src='http://code.jquery.com/jquery-1.8.0.min.js'></script>
+    <script src='/javascripts/chat.js'></script>
+    <script src='/javascripts/chat_ui.js'>
+</body>
+</html>
