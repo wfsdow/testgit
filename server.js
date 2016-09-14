@@ -60,3 +60,5 @@ server.listen(3000, function(){
 //加载服务端聊天功能模块
 var chatServer = require('./lib/chat_server');
 chatServer.listen(server) ;
+
+//添加了一行注释
